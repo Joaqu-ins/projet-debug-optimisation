@@ -15,6 +15,7 @@ body {
 	justify-content: space-between;
 	padding-inline: 100px;
 	padding-block: 30px;
+
 	align-items: center;
 }
 
@@ -40,6 +41,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: auto;
 }
 
 #about {
@@ -69,6 +71,7 @@ body {
 
 .picture img {
 	width: 100%;
+	height: auto;
 
 }
 #about-me {
