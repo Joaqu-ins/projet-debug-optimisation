@@ -33,9 +33,9 @@
 	<script src="./assets/scripts.js"></script>
 </head>
 
-<body itemscope itemtype="https://schema.org/Person" >
-	<header class="top-header">
-		<h1 itemprop="name"  class="name">Nina Carducci</h1>
+<body>
+	<header itemscope itemtype="https://schema.org/Person" class="top-header">
+		<h1 itemprop="name" class="name">Nina Carducci</h1>
 		<div class="nav">
 			<ul>
 				<li><a href="#about">À propos</a></li>
@@ -49,7 +49,7 @@
 		</div>
 	</header>
 	<section id="header">
-		<main>
+		<main itemscope itemtype="https://schema.org/CreativeWork">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -59,17 +59,17 @@
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
 						aria-label="Slide 3"></button>
 				</div>
-				<div class="carousel-inner">
+				<div itemscope itemtype="https://schema.org/photograph" class="carousel-inner">
 					<div class="carousel-item active">
-						<img fetchpriority="high" src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+						<img itemprop="image" fetchpriority="high" src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
 							class="d-block w-100" alt="Photographie d'un homme traversant un passage piéton">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100"
+						<img itemprop="image" src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100"
 							width="1920" height="888" alt="Photographie d'un public de concert">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+						<img itemprop="image" src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
 							class="d-block w-100" alt="Photographie d'un couple de mariés s'embrassant">
 					</div>
 				</div>
@@ -104,7 +104,7 @@
 	</section>
 	<section id="gallery">
 		<h2 class="title">Portfolio</h2>
-		<div itemscope itemtype="https://schema.org/CreativeWork" class="container py-3">
+		<div class="container py-3">
 			<div itemscope itemtype="https://schema.org/photograph" class="gallery" style="display: none">
 				<img itemprop="image" data-gallery-tag="Concert" class="gallery-item"
 					src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
