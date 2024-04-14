@@ -33,9 +33,9 @@
 	<script src="./assets/scripts.js"></script>
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/Artist" >
 	<header class="top-header">
-		<h1 class="name">Nina Carducci</h1>
+		<h1 itemprop="name"  class="name">Nina Carducci</h1>
 		<div class="nav">
 			<ul>
 				<li><a href="#about">À propos</a></li>
@@ -87,11 +87,11 @@
 	</section>
 	<section id="about">
 		<div class="picture left">
-			<img src="./assets/images/nina.webp" width="468" height="468" alt="Photographie de Nina Carducci">
+			<img src="./assets/images/nina.webp" width="468" height="468" alt="Photographie de Nina Carducci" itemprop="image">
 		</div>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
-			<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
+			<h3 itemprop="publishingPrinciples" class="about-me__introduction" itemprop="description" >Devenir photographe était pour moi une évidence. Comme si j’y étais
 				prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
 				immortels, voilà ce qui me fait vibrer.</h3>
 			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le
@@ -104,33 +104,33 @@
 	</section>
 	<section id="gallery">
 		<h2 class="title">Portfolio</h2>
-		<div class="container py-3">
-			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item"
+		<div itemscope itemtype="https://schema.org/CreativeWork" class="container py-3">
+			<div itemscope itemtype="https://schema.org/photograph" class="gallery" style="display: none">
+				<img itemprop="image" data-gallery-tag="Concert" class="gallery-item"
 					src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
 					alt="Photographie de l'ambiance d'un concert" />
-				<img data-gallery-tag="Entreprises" class="gallery-item"
+				<img itemprop="image" data-gallery-tag="Entreprises" class="gallery-item"
 					src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
 					alt="Photographie d'un homme souriant en costume" />
-				<img data-gallery-tag="Entreprises" class="gallery-item"
+				<img itemprop="image" data-gallery-tag="Entreprises" class="gallery-item"
 					src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
 					alt="Photographie de deux collaboratrices souriantes" />
-				<img data-gallery-tag="Mariages" class="gallery-item"
+				<img itemprop="image" data-gallery-tag="Mariages" class="gallery-item"
 					src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
 					alt="Photographie des mains des mariés" />
-				<img data-gallery-tag="Portrait" class="gallery-item"
+				<img itemprop="image" data-gallery-tag="Portrait" class="gallery-item"
 					src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
 					alt="Photographie d'un visage fermant les yeux" />
-				<img data-gallery-tag="Mariages" class="gallery-item"
+				<img itemprop="image" data-gallery-tag="Mariages" class="gallery-item"
 					src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
 					alt="Photographie des mariés heureux" />
-				<img data-gallery-tag="Portrait" class="gallery-item"
+				<img itemprop="image" data-gallery-tag="Portrait" class="gallery-item"
 					src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
 					alt="Photographie d'une femme derrière un grillage" />
-				<img data-gallery-tag="Concert" class="gallery-item"
+				<img itemprop="image" data-gallery-tag="Concert" class="gallery-item"
 					src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
 					alt="Photographie d'un chanteur sur scène" />
-				<img data-gallery-tag="Entreprises" class="gallery-item"
+				<img itemprop="image" data-gallery-tag="Entreprises" class="gallery-item"
 					src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
 					alt="Photographie d'une collaboratrice souriante" />
 			</div>
@@ -147,39 +147,39 @@
 			</figure>
 		</div>
 	</section>
-	<section id="services">
+	<section itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer" id="services">
 		<h2 class="title">Mes services</h2>
 		<div class="container">
 			<div class="service">
 				<div class="service__description">
-					<h3>Shooting photo</h3>
+					<h3 itemprop="name">Shooting photo</h3>
 					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en
 						Île-de-France pour réaliser vos photos</p>
 				</div>
 				<div class="service__price">
-					<h4>350€/demi journée</h4>
+					<h4 itemprop="price">350€/demi journée</h4>
 					<span>Matériel, déplacement inclus</span>
 				</div>
 			</div>
 			<div class="service">
 				<div class="service__description">
-					<h3>Retouches</h3>
+					<h3 itemprop="name">Retouches</h3>
 					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
 						optimal pour vos publications</p>
 				</div>
 				<div class="service__price">
-					<h4>50€/photo</h4>
+					<h4 itemprop="price">50€/photo</h4>
 					<span>2 AR par photo</span>
 				</div>
 			</div>
 			<div class="service">
 				<div class="service__description">
-					<h3>Album photos</h3>
+					<h3 itemprop="name">Album photos</h3>
 					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un
 						album photo personnalisé</p>
 				</div>
 				<div class="service__price">
-					<h4>400€ album A4</h4>
+					<h4 itemprop="price">400€ album A4</h4>
 					<span>30 pages recto/verso</span>
 				</div>
 			</div>
